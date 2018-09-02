@@ -1,4 +1,5 @@
 .Navigation {
+	font-size: 21px;
 }
 
 .navbar {
@@ -26,7 +27,7 @@
 }
 
 .mid {
-	padding: 0 2.5rem;
+	padding: 0 4rem;
 }
 
 .navbar_navigation-items li a {
@@ -38,13 +39,13 @@
 }
 
 .leftedge {
-	padding-right: 2.5rem;
-	padding-left: 2px;
+	padding-right: 4rem;
+	padding-left: 1.5rem;
 }
 
 .rightedge {
-	padding-left: 2.5rem;
-	padding-right: 2px;
+	padding-left: 4rem;
+	padding-right: 1.5rem;
 }
 
 .navbar_navigation-items a:hover {
@@ -108,7 +109,7 @@
 }
 
 .NavMenu-entering {
-	transform: translateY(0);
+	transform: translateY(0%);
 	transition: transform 0.3s ease-out;
 }
 
@@ -148,9 +149,22 @@
 	animation: bounce 1.5s infinite;
 }
 
+@media (min-width: 1024px) {
+	.navbar_navigation-items li a {
+		margin-left: 10px;
+		margin-right: 15px;
+	}
+}
+
 @media (max-width: 840px) {
 	.navbar_navigation-items {
 		display: none;
+	}
+	.NavMenu ul li a {
+		font-size: 20px;
+	}
+	.NavMenu {
+		padding-bottom: 10px;
 	}
 }
 
