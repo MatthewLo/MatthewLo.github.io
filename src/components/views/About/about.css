@@ -12,14 +12,55 @@
 }
 
 .bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100vh;
 	width: 100vw;
+	text-align: center;
 	position: relative;
 	z-index: -2;
-	background-image: url('../../../images/matthewchristine.jpg');
-	opacity: 0.6;
+	background-image: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+		url('../../../images/matthewchristine.jpg');
 
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.aboutText {
+	border: 1px solid;
+	overflow: auto;
+	color: #FFF;
+	font-size: 22px;
+	font-family: 'Muli';
+	padding: 0.5rem;
+	height: 55vh;
+	width: 50%;
+	display: inline;
+	line-height: 6vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #818181;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FAFAFA;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #818181;
 }
